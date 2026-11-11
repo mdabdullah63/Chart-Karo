@@ -1,0 +1,15 @@
+{
+  "name": "chat-karo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chat Karo - real-time chat app (React + Express + Socket.io + MongoDB)",
+  "scripts": {
+    "build": "npm --prefix Frontend install --include=dev && npm --prefix Frontend run build && npm --prefix Backend install",
+    "start": "node Backend/server.js",
+    "dev:backend": "npm --prefix Backend run dev",
+    "dev:frontend": "npm --prefix Frontend run dev"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
